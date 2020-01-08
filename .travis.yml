@@ -6,7 +6,7 @@ before_instal:
   - docker build -t ivandjukic/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true ivandjukic/docker-react:latest npm run test
+  - docker run -e CI=true ivandjukic/docker-react npm run test
 
 deploy:
   # edge: true
