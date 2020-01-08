@@ -7,5 +7,3 @@ before_instal:
 
 script:
   - docker run -e CI=true ivandjukic/docker-react npm run test -- -- coverage
-
-language: generic 
